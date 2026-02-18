@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FiBER - Unisex fashion brand blending urban culture with modern minimalism. Shop hoodies, sweatshirts, joggers, and t-shirts.">
+    <meta name="keywords" content="unisex fashion, minimalist clothing, urban style, streetwear, FiBER">
+    <title>FiBER | Unisex Fashion Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-brand">
+            <a href="#home" class="logo">FiBER</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#shop" class="nav-link">Shop</a></li>
+            <li><a href="#custom" class="nav-link">Custom</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+                    <span>Cart</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">₦0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" disabled>Checkout via WhatsApp</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <div class="home-content">
+                <h1 class="home-title">Style Has No<br>Expiration Date</h1>
+                <p class="home-subtitle">Unisex fashion blending urban culture with modern minimalism.</p>
+                <a href="#shop" class="btn btn-primary">Shop Collection</a>
+            </div>
+            <div class="home-image">
+                <!-- Placeholder for hero image -->
+                <div class="image-placeholder hero-placeholder">
+                    <span>FiBER Collection</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section shop">
+            <div class="section-header">
+                <h2>Shop</h2>
+                <p>Essential pieces designed for the ageless</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products rendered via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Custom Design Section -->
+        <section id="custom" class="section custom">
+            <div class="section-header">
+                <h2>Custom Design</h2>
+                <p>Create your unique FiBER piece</p>
+            </div>
+            <div class="custom-content">
+                <div class="custom-info">
+                    <h3>Design Your Own</h3>
+                    <p>Want something unique? We offer custom designs on any of our base pieces. Choose your garment, colors, and add your personal touch.</p>
+                    <ul class="custom-features">
+                        <li>Custom colors & graphics</li>
+                        <li>Embroidery options</li>
+                        <li>Bulk orders available</li>
+                        <li>2-3 week turnaround</li>
+                    </ul>
+                    <a href="https://wa.me/2349136142251?text=Hi%20FiBER,%20I'm%20interested%20in%20custom%20designs" 
+                       class="btn btn-secondary" target="_blank" rel="noopener">
+                        Start Custom Order
+                    </a>
+                </div>
+                <div class="custom-visual">
+                    <div class="image-placeholder custom-placeholder">
+                        <span>Custom Design Studio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Footer Section -->
+        <section id="contact" class="section contact">
+            <div class="contact-content">
+                <div class="contact-brand">
+                    <h2 class="logo">FiBER</h2>
+                    <p>Designed for the ageless — because style has no expiration date.</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p>WhatsApp: <a href="https://wa.me/2349136142251">+234 913 614 2251</a></p>
+                    <p>Email: <a href="mailto:hello@fiber.studio">hello@fiber.studio</a></p>
+                </div>
+                <div class="contact-social">
+                    <h3>Follow</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FiBER. All rights reserved.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
